@@ -1,0 +1,11 @@
+{% load i18n %}
+{% blocktrans with username=username activation_link=activation_link context "Email" %}Hi!
+
+
+Please confirm your username ({{username}}) with a click on the link.
+
+{{activation_link}}
+
+Thanks,
+
+cmsAuth team.{% endblocktrans %}

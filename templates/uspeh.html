@@ -1,0 +1,55 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+        </script>
+        <link rel="shortcut icon" href="{{u}}static/favicon.ico" />
+        <script type="text/javascript" src="{{u}}static/jq/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="{{u}}static/js/bootstrap.js"></script>
+        <script type="text/javascript" src="{{u}}static/cws_utils.js"></script>
+        <link rel="stylesheet" href="{{u}}static/css/bootstrap.css">
+        <link rel="stylesheet" href="{{u}}static/cws_style.css">
+
+        <title>{% trans "Password changed" %}</title>
+
+        <script type="text/javascript">
+var utils = new CMS.CWSUtils("{{u}}",
+                             0, 0, 0, 0, 0);
+        </script>
+<script>
+   $("form").submit(function() {
+     var emailFromOtherTextBox = $("#email_textbox").val();
+     $("#email").val(emailFromOtherTextBox ); 
+     return true;
+  });
+</script>
+    </head>
+    <body id="body">
+        <div id="navigation_bar" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="{{u}}">{% trans "CMS contest name (e.g. CMS)" %}</a>
+                </div>
+            </div>
+        </div>
+        <div class="login_container">
+            <div class="login_box hero-unit">
+                <h1>{% trans "Password changed successfully" %}</h1>
+                <p>{% trans "Your password was changed. Now you can proceed solving tasks." %}</p>
+                        
+     
+                        </ul>
+                  <span class="license_notice"> 
+                    <a href="http://github.com/cms-dev/cms/" rel="author noreferrer" target="_blank">{% trans "Contest Management System" %}</a> {% trans "and" %} <a href="http://github.com/slosimon/cmsAuth/" rel="author noreferrer" target="_blank">{% trans "cmsAuth" %}</a>
+                    {% trans "are released under the" %}
+                    <a href="http://www.gnu.org/licenses/agpl" rel="license noreferrer" target="_blank">{% trans "GNU Affero General Public License" %}</a>
+                    .                 </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

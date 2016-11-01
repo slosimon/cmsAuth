@@ -1,0 +1,10 @@
+{%load i18n %}
+{% blocktrans with username=username actiation_link=activation_link context "Request New Password" %}Hi!
+
+We recieved your request for changing password for username: {{username}}. You can do it by clicking on next link:
+
+{{activation_link}}
+
+Best regards
+
+cmsAuth team.{% endblocktrans %}
