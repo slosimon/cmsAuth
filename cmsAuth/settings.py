@@ -49,7 +49,7 @@ SECRET_KEY = 'v$ltz3+jj9o@m_d&hh6367c6#p=s)*(r&9dbw5k#p+z@f$2r^8' #generate new
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['your domain']
+ALLOWED_HOSTS = ['your domain'] #change this. if you don't have any, change DEBUG = True. But it might lead into security problems
 
 
 # Application definition
