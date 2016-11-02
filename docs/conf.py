@@ -31,7 +31,6 @@
 # ones.
 extensions = [
     'sphinx.ext.todo',
-    'sphinx.ext.imgmath',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
