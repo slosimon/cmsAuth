@@ -5,13 +5,14 @@ After installing Contest Management System you have to install several other fea
 
 For Ubuntu/Debian
 ======
+Type in terminal:
 ::
     sudo pip install virtualenv
     virtualenv cmsAuthEnv #Or any other name you want to use
     source cmsAuthEnv/bin/activate
 
 Then you will need to install Django and gunicorn
-
+::
     pip install django gunicorn 
 
 After doing this, you may pull the project from github (make a new folder on the same level as it is your virtualenv folder) e.g.
@@ -29,9 +30,9 @@ You should see a file in *locale/[your language code]/LC_MESSAGES/django.po* . T
     
 After compiling messages, you should run 
 ::
-    ``./manage.py collectstatic`` 
-    ``./manage.py makemigrations``
-    ``./manage.py migrate``
+    ./manage.py collectstatic 
+    ./manage.py makemigrations
+    ./manage.py migrate
     
 After that run 
 ::
