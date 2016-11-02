@@ -14,6 +14,7 @@ Then you will need to install Django and gunicorn
     pip install django gunicorn 
 
 After doing this, you may pull the project from github (make a new folder on the same level as it is your virtualenv folder) e.g.
+
 ~/--->cmsAuthEnv
   |
   --->cmsAuth
