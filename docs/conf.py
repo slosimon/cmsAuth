@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # cmsAuth documentation build configuration file, created by
-# sphinx-quickstart on Tue Nov  1 18:19:06 2016.
+# sphinx-quickstart on Wed Nov  2 13:08:02 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -30,12 +30,8 @@
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.ifconfig',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages',
+    'sphinx.ext.todo',
+    'sphinx.ext.imgmath',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -118,7 +114,7 @@ pygments_style = 'sphinx'
 # keep_warnings = False
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = False
+todo_include_todos = True
 
 
 # -- Options for HTML output ----------------------------------------------
