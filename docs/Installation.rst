@@ -29,8 +29,8 @@ You should see a file in *locale/[your language code]/LC_MESSAGES/django.po* . T
     
 After compiling messages, you should run 
 
-    ./manage.py collectstatic
-    ./manage.py makemigrations
+    ./manage.py collectstatic \n
+    ./manage.py makemigrations \n
     ./manage.py migrate
     
 After that run 
